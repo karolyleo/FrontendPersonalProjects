@@ -1,0 +1,65 @@
+:root {
+    /* "Primary Color" */
+    --color-orange: hsl(25, 97%, 53%);
+    /* "Neutral Colors" */
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-grey: hsl(217, 12%, 63%);
+    --color-medium-grey: hsl(216, 12%, 54%);
+    --color-dark-blue: hsl(213, 19%, 18%);
+    --color-very-dark-blue: hsl(216, 12%, 8%);
+    /* Font is in weights of 400 and 700 */
+    --font-family-overpass: 'Overpass', sans-serif;
+}
+/*Default of the page*/
+body {
+    /*default font used for paragraphs*/
+    font-size: 15px;
+    font-family:var(--font-family-overpass);
+    background-color: var(--color-very-dark-blue);
+    color: var(--color-white);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.card {
+    width: 88%;
+    /*height: 100px;*/
+    padding: 2.5rem;
+    background-color: var(--color-dark-blue);
+    border-radius: 1.5rem;
+.orange-star {
+    background-color: var(--color-medium-grey);
+    width: fit-content;
+    padding: 1rem;
+}
+h1 {
+    font-size: 2.4rem;
+    /*color: var(--color-white); */
+}
+/*Pre determined classes and their associated properties*/
+.circle img {
+    object-fit: cover;
+    width: 35%;
+    height: 35%;
+}
+.circle {
+    background-color: var(--color-dark-blue);
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .2px outset black;
+    /*margin: 25px;*/
+}
+.rating-row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
