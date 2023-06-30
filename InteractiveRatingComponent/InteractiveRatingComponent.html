@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/styles.css">
     <title>Interactive rating component</title>
+    <script src="js/rating.js"></script>
 </head>
 <body>
 <main class="container">
@@ -14,14 +15,18 @@
         <h1>How did we do?</h1>
         <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
         <div class="rating-row">
-            <button class="circle">1</button>
-            <button class="circle">2</button>
-            <button class="circle">3</button>
-            <button class="circle">4</button>
-            <button class="circle">5</button>
+            <button class="circle" value="1">1</button>
+            <button class="circle" value="2">2</button>
+            <button class="circle" value="3">3</button>
+            <button class="circle" value="4">4</button>
+            <button class="circle" value="5">5</button>
         </div>
-        <form action="thankyou.html"><button class="submit" type="submit">Submit</button> </form>
+        <form action="thankyou.html" method="get">
+            <input id="val" type="hidden" name="rating" value="0">
+            <button class="submit" type="submit">Submit</button>
+        </form>
     </div>
 </main>
+<script src="js/rating.js"></script>
 </body>
 </html>
